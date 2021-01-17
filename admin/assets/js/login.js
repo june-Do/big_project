@@ -19,6 +19,7 @@ $('form').on('submit', function(e) {
                 location.href = "/admin/index.html";
                 localStorage.setItem('mytoken', res.token);
             } else {
+                // 表单清空
                 $('form')[0].reset();
             }
         }

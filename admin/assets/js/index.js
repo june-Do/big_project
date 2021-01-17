@@ -5,7 +5,7 @@ if (localStorage.getItem('mytoken') == undefined) {
 let layer = layui.layer,
     form = layui.form;
 
-$('.quit').on('click', function() {
+$('#logout-btn').on('click', function() {
     layer.confirm('你确定退出吗？死鬼', {
         btn: ['YSE', 'NO'],
         icon: 3,
@@ -15,5 +15,5 @@ $('.quit').on('click', function() {
         localStorage.removeItem('mytoken');
         // 关闭弹窗了
         layer.close(index);
-    })
-})
+    });
+});
