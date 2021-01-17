@@ -1,5 +1,4 @@
 .layui-card-header {
-<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,18 +11,4 @@
 
 .layui-badge {
   cursor: pointer;
-=======
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.layui-table img {
-    max-height: 30px;
-}
-
-.layui-badge {
-    cursor: pointer;
->>>>>>> 678f9b2... 文章列表版本
 }
