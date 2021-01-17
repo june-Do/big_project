@@ -19,7 +19,10 @@ $('form').on('submit', function(e) {
                 location.href = "/admin/index.html";
                 localStorage.setItem('mytoken', res.token);
             } else {
+<<<<<<< HEAD
                 // 表单清空
+=======
+>>>>>>> 678f9b2... 文章列表版本
                 $('form')[0].reset();
             }
         }

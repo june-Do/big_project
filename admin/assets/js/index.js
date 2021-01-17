@@ -5,7 +5,11 @@ if (localStorage.getItem('mytoken') == undefined) {
 let layer = layui.layer,
     form = layui.form;
 
+<<<<<<< HEAD
 $('#logout-btn').on('click', function() {
+=======
+$('.quit').on('click', function() {
+>>>>>>> 678f9b2... 文章列表版本
     layer.confirm('你确定退出吗？死鬼', {
         btn: ['YSE', 'NO'],
         icon: 3,
@@ -15,5 +19,10 @@ $('#logout-btn').on('click', function() {
         localStorage.removeItem('mytoken');
         // 关闭弹窗了
         layer.close(index);
+<<<<<<< HEAD
     });
 });
+=======
+    })
+})
+>>>>>>> 678f9b2... 文章列表版本
