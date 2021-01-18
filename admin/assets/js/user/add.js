@@ -1,7 +1,7 @@
 //  添加用户
 
-var form = layui.form
-
+var form = layui.form;
+var layer = layui.layer;
 // 自定义表单验证
 form.verify({
     //  自定义验证判断两次密码输入是否一样
@@ -24,12 +24,18 @@ $(".layui-form").submit(function (e) {
         url: 'admin/users',
         data: data,
         success: function (res) {
-            console.log(data);
-            layer.msg(res.message)
-            location.href = '/admin/user/user.html';
-            // 相对应的a要亮起来；
-            var light = window.parent.document.querySelector("#light");
-            $(light).addClass("layui-this").next().removeClass("layui-this");
+            // console.log(data);
+            layer.msg(res.message);
+            setTimeout(function () {
+                location.href = '/admin/user/user.html';
+                // 相对应的a要亮起来；
+                var light = window.parent.document.querySelector("#light");
+                $(light).addClass("layui-this").next().removeClass("layui-this");
+            }, 500);
+            // location.href = '/admin/user/user.html';
+            // // 相对应的a要亮起来；
+            // var light = window.parent.document.querySelector("#light");
+            // $(light).addClass("layui-this").next().removeClass("layui-this");
         }
     })
 
